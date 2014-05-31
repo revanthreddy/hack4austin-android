@@ -1,0 +1,100 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout 
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SessionMechanicsActivityCont"
+    tools:ignore="HardcodedText" >
+    
+    <TextView
+        android:id="@+id/activitymechanicscont_textview_musicalProgressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is the student progressing musically ?"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/activitymechanicscont_radiogroup_musicProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/activitymechanicscont_radiogroup_musicProgressYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Yes" />
+
+        <RadioButton
+            android:id="@+id/activitymechanicscont_radiogroup_musicProgressNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/No" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/activitymechanicscont_textview_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rank : "
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/activitymechanicscont_ratingBar_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:id="@+id/activitymechanicscont_textview_behaviourProblemsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Were there any behavioral Problems during lesson ?"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/activitymechanicscont_radiogroup_behaviouralProblems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/activitymechanicscont_radiogroup_behaviouralProblemsYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Yes" />
+
+        <RadioButton
+            android:id="@+id/activitymechanicscont_radiogroup_behaviouralProblemsNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/No" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/activitymechanicscont_editText_behaviouralProblemsComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Click to Explain Behavioral Problems"
+        android:inputType="textMultiLine" >
+    </EditText>
+
+    <Button
+        android:id="@+id/activitymechanicscont_button_Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="15dp"
+        android:text="Next: LifeSkills Progress" />
+
+</LinearLayout>
+</ScrollView>

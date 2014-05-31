@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hack4good.king"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.hack4good.activities.InitDetailsActivity"
+            android:label="@string/activityinitdetails_Label" >
+        </activity>
+        <activity
+            android:name="com.hack4good.activities.SessionBasicInfoActivity"
+            android:label="@string/activitybasicinfo_label" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hack4good.activities.SessionBasicInfoContActivity"
+            android:label="@string/activitybasicinfoCont_label" >
+        </activity>
+        <activity
+            android:name="com.hack4good.activities.SessionMechanicsActivity"
+            android:label="@string/title_activity_session_mechanics" >
+            
+        </activity>
+        <activity
+            android:name="com.hack4good.activities.SessionMechanicsActivityCont"
+            android:label="@string/title_activity_session_mechanics_activity_cont" >
+            
+        </activity>
+        <activity
+            android:name="com.hack4good.activities.SessionLifeSkillsProgressActivity"
+            android:label="@string/title_activity_session_life_skills_progress" >
+        </activity>
+    </application>
+
+</manifest>

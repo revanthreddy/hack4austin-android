@@ -1,0 +1,104 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout 
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SessionLifeSkillsProgressActivity"
+    tools:ignore="HardcodedText" >
+    
+    <TextView
+        android:id="@+id/activitysessionlifeskillprogress_textview_confidenceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Did your student feel confident during the lesson ?"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/activitysessionlifeskillprogress_radiogroup_confidence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/activitysessionlifeskillprogress_radiogroup_confidenceYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Yes" />
+
+        <RadioButton
+            android:id="@+id/activitysessionlifeskillprogress_radiogroup_confidenceNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/No" />
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/activitysessionlifeskillprogress_textview_prideLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Did your student show pride in achievement ?"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/activitysessionlifeskillprogress_radiogroup_pride"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/activitysessionlifeskillprogress_radiogroup_prideYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Yes" />
+
+        <RadioButton
+            android:id="@+id/activitysessionlifeskillprogress_radiogroup_prideNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/No" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/activitysessionlifeskillprogress_textview_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rank : "
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/activitysessionlifeskillprogress_ratingBar_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:id="@+id/activitysessionlifeskillprogress_textview_multiSkillTextLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rank your student progress with life skills, including responsibilities, diligence, social skills and overall attitude : "
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/activitysessionlifeskillprogress_textview_multiSkillRankLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rank : "
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/activitysessionlifeskillprogress_ratingBar_multiSkillrank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+</ScrollView>
