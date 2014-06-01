@@ -7,7 +7,20 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
+	
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
+   <permission
+        android:name="com.hack4good.king.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.hack4good.king.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+   
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -50,7 +63,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity> 
-              
+		
+        <service
+            android:name="com.esri.android.geotrigger.GeotriggerService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.esri.android.geotrigger.MessageReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+          <intent-filter>
+            <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+            <category android:name="com.esri.android.geotrigger.sample" />
+          </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <data android:path="com.hack4good.king"
+                      android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data android:name="com.google.android.gms.version" 
+            android:value="4452000"/>
     </application>
 
 </manifest>

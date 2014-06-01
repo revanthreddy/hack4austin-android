@@ -22,4 +22,12 @@
 	    android:layout_marginTop="158dp"
 	    android:text="Create a new log" />
 
+	<Button
+	    android:id="@+id/settings"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/logs"
+	    android:layout_centerHorizontal="true"
+	    android:text="Settings" />
+
 </RelativeLayout>
