@@ -27,5 +27,7 @@
     <string name="title_activity_session_mechanics">SessionMechanics</string>
     <string name="title_activity_session_mechanics_activity_cont">SessionMechanics Cont</string>
     <string name="title_activity_session_life_skills_progress">Session LifeSkillsProgress</string>
+    <string name="title_home_page">TeachCron</string>
+    <string name="title_activity_session_logs">Drafted logs</string>
 
 </resources>

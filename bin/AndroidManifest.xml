@@ -19,10 +19,6 @@
         <activity
             android:name="com.hack4good.activities.SessionBasicInfoActivity"
             android:label="@string/activitybasicinfo_label" >
-            <intent-filter >
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.hack4good.activities.SessionBasicInfoContActivity"
@@ -42,6 +38,19 @@
             android:name="com.hack4good.activities.SessionLifeSkillsProgressActivity"
             android:label="@string/title_activity_session_life_skills_progress" >
         </activity>
+        <activity
+            android:name="com.hack4good.activities.SessionLogsActivity" 
+            android:label="@string/title_activity_session_logs" >
+        </activity> 
+        <activity
+            android:name="com.hack4good.activities.HomePageActivity" 
+            android:label="@string/title_home_page" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> 
+              
     </application>
 
 </manifest>
